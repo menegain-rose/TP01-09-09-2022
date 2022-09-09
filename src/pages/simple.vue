@@ -1,5 +1,5 @@
 <template>
-            <section>
+        <section>
           <div class="">
             <bouton class="content-center">Voir plus</bouton>
             <card :price="2700" 
@@ -59,4 +59,4 @@
       name: "App",
       components: { card, bouton, ArchiveIcon, BellIcon, AdjustmentsIcon, SearchIcon, UserAddIcon, ChatIcon, HomeIcon, MailOpenIcon, MenuAlt4Icon, ChevronRightIcon, ChevronLeftIcon, AtSymbolIcon, QuestionMarkCircleIcon, ChatAltIcon, GiftIcon },
     };
-    </script>
+</script>
