@@ -8,14 +8,28 @@
       <li>
         <router-link class="text-red-600 underline" to="/">
           lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
+          <code class="font-mono">Index</code>
         </router-link>
       </li>
-
-      <router-link class="text-red-600 underline" to="simple">
-          lien vers
-          <code class="font-mono">simple</code>
-        </router-link>
+      <li>
+        <router-link class="text-red-600 underline" to="simple">
+            lien vers
+            <code class="font-mono">simple</code>
+          </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="liste">
+            lien vers
+            <code class="font-mono">liste</code>
+          </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="listefch">
+            lien vers
+            <code class="font-mono">listefch</code>
+          </router-link>
+      </li>
+   
     </ul>
   </nav>
 
