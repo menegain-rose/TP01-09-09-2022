@@ -1,42 +1,51 @@
-<script>
+<template>
+    <figure class="flex.flex-col m-5 bg-gray-50">
+        <img class="w-96px h-auto object-cover rounded-t-lg" :src="image" alt=""
+            />
+
+        <figcaption class="relative p-5 pt-8 border-2 border-t-0 rounded-lg border-indigo-100 flex flex-col">
+
+            <section>
+                <div class="text-xl font-bold text-left text-indigo-500">${{ price }}</div>
+                <div class="text-gray-500 text-base inline-block">/month</div>
+                <h3 class="text-xl text-gray-900">{{titre}}</h3>
+                <p class="text-gray-500">{{ adresse }}</p>
+                <hr class="m-4 border-indigo-100" />
+                <div class="flex flex-row justify-between text-sm">
+                    <div  class="w-max"><bed class="h-5 w-5 mr-1 inline-block" />{{ nbrBed }}</div>
+                    <div class="w-max"><bath class="h-5 w-5 mr-1 inline-block" />{{ nbrSDB }}</div>
+                    <div class="w-max"><dimensions class="h-5 w-5 mr-1 inline-block1" />{{ nbrDim }}</div>
+                </div>
+                <div class="absolute top-7 right-7 w-10 h-10 grid place-items-center rounded-full">
+                    <heart class="h-15 w-15 mr-1"/> {{ favori }}
+                </div>
+            </section>
+        </figcaption>
+    </figure>
+</template>
+
+<script >
+import bed from "./icones/beds.vue";
 import bath from "./icones/bath.vue";
-import heart from "./icones/heart.vue";
+import dimensions from './icones/dimensions.vue';
+import heart from './icones/heart.vue';
+
 
 export default {
-  /* Les "props" servent à définir les "attributs" qui seront passés a l'instance du composant pour le personnalisé.
-  Chaque "props" a un nom et un type */
-  props: {
-    nom: String,
-    prix: Number,
-    favori: Boolean,
-    image: String, // les images sont simplement l'URL absolue (depuis la racine, débute par '/' )
-    nbrSDB: Number,
-  },
-  components: { bath, heart },
-};
+    props: {
+        price:Number,
+        nbrSDB:Number,
+        nbrBed:Number,
+        nbrDim:Number,
+        titre:String,
+        adresse:String,
+        image:String,
+        favori: Boolean,
+
+    },
+
+  components: { dimensions, bath, bed, heart },
+
+}
+
 </script>
-
-<template>
-  <figure>
-    <!-- Pour changer la valeur d'un attribut on utilise un "binding" :
-    https://vuejs.org/guide/essentials/template-syntax.html#attribute-bindings 
-    Ici on affecte à l'attribut 'src' la 'props' "image" -->
-    <img class="w-full h-48 object-cover" :src="image" alt="" />
-    <figcaption
-      class="relative flex flex-col border-2 border-t-0 border-indigo-100"
-    >
-      <!-- Pour changer une classe CSS en fonction d'un booléen : 
-      https://vuejs.org/guide/essentials/class-and-style.html#binding-html-classes -->
-      <heart :class="{ 'fill-red-300': favori }" />
-
-      <!-- Pour afficher du contenu textuel, simplement utiliser l'interpolation par double accolades (qui contiendront le JS dont l'interpretation donne le résultat affiché). -->
-      <div class="text-2xl font-bold text-indigo-500 pr-1">${{ prix }}</div>
-
-      <h3 class="text-2xl text-gray-900">{{ nom }}</h3>
-
-      <hr class="border-indigo-100 border-t-2 my-4" />
-
-      <div><bath class="inline-block pr-1" />{{ nbrSDB }} Bathrooms</div>
-    </figcaption>
-  </figure>
-</template>
