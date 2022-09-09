@@ -24,15 +24,16 @@
     </figure>
 </template>
 
-<script >
-import bed from "./icones/beds.vue";
-import bath from "./icones/bath.vue";
-import dimensions from './icones/dimensions.vue';
-import heart from './icones/heart.vue';
 
 
-export default {
-    props: {
+<script setup lang="ts">
+    import bed from "./icones/beds.vue";
+    import bath from "./icones/bath.vue";
+    import dimensions from './icones/dimensions.vue';
+    import heart from './icones/heart.vue';
+        
+    
+    defineProps({
         price:Number,
         nbrSDB:Number,
         nbrBed:Number,
@@ -41,11 +42,6 @@ export default {
         adresse:String,
         image:String,
         favori: Boolean,
-
-    },
-
-  components: { dimensions, bath, bed, heart },
-
-}
-
-</script>
+        })
+    
+        </script>
