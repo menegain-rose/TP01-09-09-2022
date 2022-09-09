@@ -9,7 +9,7 @@
 
 
 <script setup lang="ts">
-import card from "src/components/card.vue";
+import card from "../components/card.vue";
     const props = defineProps({
       foo: Number
     })
