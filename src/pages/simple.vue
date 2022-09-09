@@ -3,11 +3,13 @@
         <h2>
             Page simple
         </h2>
-        <card image="une.jpg"
+        <card v-bind=unObjet
          />
-         <img v-bind:src="image" />
         
     </div>
+
+
+    
 </template>
 
 
