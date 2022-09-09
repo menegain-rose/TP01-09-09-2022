@@ -51,12 +51,13 @@
         </section>
 </template>
 
-<script >
-    import card from "./components/card.vue";
-    import bouton from "./components/bouton.vue";
-    import { ArchiveIcon, BellIcon, AdjustmentsIcon, SearchIcon, UserAddIcon, ChatIcon, HomeIcon, MailOpenIcon, MenuAlt4Icon, ChevronRightIcon, ChevronLeftIcon, AtSymbolIcon, QuestionMarkCircleIcon, ChatAltIcon, GiftIcon } from "@heroicons/vue/outline";
-    export default {
-      name: "App",
-      components: { card, bouton, ArchiveIcon, BellIcon, AdjustmentsIcon, SearchIcon, UserAddIcon, ChatIcon, HomeIcon, MailOpenIcon, MenuAlt4Icon, ChevronRightIcon, ChevronLeftIcon, AtSymbolIcon, QuestionMarkCircleIcon, ChatAltIcon, GiftIcon },
-    };
-</script>
+
+<script setup lang="ts">
+    const props = defineProps({
+      titre: { type: String, required: true },
+      price: Number
+    })
+    
+    props.titre // string
+    props.price // number | undefined
+    </script>

@@ -11,6 +11,9 @@
           <code class="font-mono">/src/pages/index.vue</code>
         </router-link>
       </li>
+      <RouterLink to="/Favoris" class="pt-2">
+              Favoris
+            </RouterLink>
     </ul>
   </nav>
 
