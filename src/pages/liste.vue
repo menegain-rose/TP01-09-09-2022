@@ -1,5 +1,9 @@
 <template>
-    const maisons = [ {/* Obj 1re maison */}, { /* Obj 2nd */ }, /* ... */ ];
     
 </template>
+
+<script  setup lang="ts">
+    const maisons = [ {/* Obj 1re maison */}, { /* Obj 2nd */ }, /* ... */ ];
+
+</script>
 
