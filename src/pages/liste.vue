@@ -1,9 +1,14 @@
 <template>
-    
+    <div class="p-2">
+        
+    </div>
 </template>
 
 <script  setup lang="ts">
-    const maisons = [ {/* Obj 1re maison */}, { /* Obj 2nd */ }, /* ... */ ];
+    import
+
+
+    //const maisons = [ {/* Obj 1re maison */}, { /* Obj 2nd */ }, /* ... */ ];
 
 </script>
 
