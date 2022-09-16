@@ -24,6 +24,11 @@
             <code class="font-mono">listefch</code>
           </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 ml-4" to="New">
+            <code class="font-mono">New</code>
+          </router-link>
+      </li>
    
     </ul>
   </nav>
