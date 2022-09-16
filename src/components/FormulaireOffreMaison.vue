@@ -27,8 +27,11 @@ import Card from "./card.vue";
                 },
                 }"
                 >
-                    <FormKit name="titre" label="nom" />
+                    <FormKit name="titre" label="titre" />
                     <FormKit name="price" label="prix" type="number" />
+                    <FormKit name="nbrSDB" label="nbrSDB" type="number" />
+                    <FormKit name="nbrBed" label="nbrBed" type="number" />
+                    <FormKit name="nbrDim" label="nbrDim" type="number" />
                     <FormKit name="favori" label="mettre en valeur" type="checkbox" wrapper-class="flex" />
                 </FormKit>
             </div>
