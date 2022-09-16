@@ -37,7 +37,7 @@
         price:Number,
         nbrSDB:Number,
         nbrBed:Number,
-        nbrDim:Number,
+        nbrDim:String,
         titre:String,
         adresse:String,
         image:String,

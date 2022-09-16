@@ -17,7 +17,7 @@
 import card from "../components/card.vue";
     const objet0 ={
        price:2800,
-         nbrDim:35,
+         nbrDim:"35m²",
          nbrbed:4,
          nbrSDB:2,
          titre:"Beverly Springfield",
