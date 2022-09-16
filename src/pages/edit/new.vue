@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FormulaireOffreMaison from "../components/FormulaireOffreMaison.vue";
+import FormulaireOffreMaison from "@/components/FormulaireOffreMaison.vue";
 
 
 </script>
