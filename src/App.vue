@@ -2,30 +2,25 @@
   <nav>
     <h4 class="text-xl">
       <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
     </h4>
-    <ul>
+    <ul class="flex">
       <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
+        <router-link class="text-red-600 ml-4" to="/">
           <code class="font-mono">Index</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="simple">
-            lien vers
+        <router-link class="text-red-600 ml-4" to="simple">
             <code class="font-mono">simple</code>
           </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste">
-            lien vers
+        <router-link class="text-red-600 ml-4" to="liste">
             <code class="font-mono">liste</code>
           </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="listefch">
-            lien vers
+        <router-link class="text-red-600 ml-4" to="listefch">
             <code class="font-mono">listefch</code>
           </router-link>
       </li>
