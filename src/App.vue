@@ -25,7 +25,7 @@
           </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 ml-4" to="New">
+        <router-link class="text-red-600 ml-4" to="/edit/new">
             <code class="font-mono">New</code>
           </router-link>
       </li>

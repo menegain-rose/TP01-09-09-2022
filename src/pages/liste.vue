@@ -3,8 +3,9 @@
         <h2>
             Page liste
         </h2>
-        <card v-bind="maisons"
-         />
+        <!-- <card v-bind="maisons[0]" />
+        <card v-bind="maisons[1]" /> -->
+         <card v-for="maison of maisons" :key="maison.titre" v-bind="maison"/>
 
         
     </div>
