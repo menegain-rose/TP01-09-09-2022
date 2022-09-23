@@ -1,19 +1,25 @@
 <template>
-    {{ posts }}
+    <div>
+      <h2>
+        Liste Fetch
+      </h2>
+      <div v-for="maison in maisons" :key="maison.nomMaison">
+      <card class="w-1/2" v-bind="maison"/>
+      </div>
+    </div>
+
   </template>
 
 <script setup lang="ts">
-    const res = await fetch(...)
-    const posts = await res.json()
+    import card from "../components/card.vue";
 
     export default {
-  async setup() {
-    const res = await fetch(...)
-    const posts = await res.json()
+    async setup() {
+    const res = await fetch("maisons.json");
+    const maisons = await res.json();
     return {
-      posts
+        }
+      }
     }
-  }
-}
 
 </script>
