@@ -12,7 +12,7 @@
 <script setup lang="ts">
     import card from "../components/card.vue";
 
-    const res = await fetch("../assets/maison.json");
+    const res = await fetch("/maison.json");
     const maisons = await res.json();
 
 

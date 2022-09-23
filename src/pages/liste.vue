@@ -13,7 +13,8 @@
 
 <script  setup lang="ts">
     import card from "../components/card.vue";
-    const maisons = [
+    import maisons from "../assets/maison.json"
+ /*    const maisons = [
 
         {
            price:2800,
@@ -48,7 +49,7 @@
         }
 
     ];
-    
+ */    
 
 
     //const maisons = [ {/* Obj 1re maison */}, { /* Obj 2nd */ }, /* ... */ ];
