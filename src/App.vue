@@ -20,8 +20,8 @@
           </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 ml-4" to="listefch">
-            <code class="font-mono">listefch</code>
+        <router-link class="text-red-600 ml-4" to="listefetch">
+            <code class="font-mono">listefetch</code>
           </router-link>
       </li>
       <li>

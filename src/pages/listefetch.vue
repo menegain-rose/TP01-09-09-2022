@@ -17,6 +17,7 @@
     async setup() {
     const res = await fetch("maisons.json");
     const maisons = await res.json();
+
     return {
         }
       }
