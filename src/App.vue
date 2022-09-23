@@ -29,6 +29,12 @@
             <code class="font-mono">New</code>
           </router-link>
       </li>
+
+      <li>
+        <router-link class="text-red-600 ml-4" to="/listsupabase">
+            <code class="font-mono">listsupabase</code>
+          </router-link>
+      </li>
    
     </ul>
   </nav>
