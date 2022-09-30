@@ -4,7 +4,7 @@ import simple from '../views/simple.vue'
 import liste from '../views/liste.vue'
 import listefetch from '../views/listefetch.vue'
 import New from '../views/New.vue'
-import listsupabase from '../views/listsupabase.vue'
+import listsupabase from '../listsupabase.vue'
 
 
 
