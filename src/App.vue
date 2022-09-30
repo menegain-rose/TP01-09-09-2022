@@ -31,7 +31,7 @@
       </li>
 
       <li>
-        <router-link class="text-red-600 ml-4" to="/listsupabase">
+        <router-link class="text-red-600 ml-4" to="/pages/listsupabase">
             <code class="font-mono">listsupabase</code>
           </router-link>
       </li>

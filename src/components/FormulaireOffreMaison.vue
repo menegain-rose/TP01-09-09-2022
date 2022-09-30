@@ -29,7 +29,7 @@ import Card from "./card.vue";
                 >
                     <FormKit name="titre" label="titre" />
                     <FormKit name="price" label="prix" type="number" />
-                    <FormKit name="image" label="image" type="String" />
+                    <FormKit name="image" label="image" />
                     <FormKit name="nbrSDB" label="nbrSDB" type="number" />
                     <FormKit name="nbrBed" label="nbrBed" type="number" />
                     <FormKit name="nbrDim" label="nbrDim" type="number" />
