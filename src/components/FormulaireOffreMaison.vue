@@ -1,11 +1,12 @@
 <script setup lang="ts">
     import { ref } from "@vue/reactivity";
-import Card from "./card.vue";
+import card from "./card.vue";
     // On fait une variable réactive qui réference les données
     // ATTENTION : faire une ref pas une Reactive car :
     // c'est l'objet qui doit être réactif, pas ses props
     const maison = ref({});
-    
+
+
     </script>
     
     <template>
@@ -35,6 +36,7 @@ import Card from "./card.vue";
                     <FormKit name="nbrDim" label="nbrDim" type="number" />
                     <FormKit name="favori" label="mettre en valeur" type="checkbox" wrapper-class="flex" />
                 </FormKit>
+                
             </div>
         </div>
 
