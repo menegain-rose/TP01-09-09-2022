@@ -1,8 +1,10 @@
 <template>
   <h2>
-        Liste supabase
-      </h2>
-    {{ posts }}
+      Liste supabase
+  </h2>
+
+
+  
   </template>
 
  // <script setup lang="ts">

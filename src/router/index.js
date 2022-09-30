@@ -4,6 +4,7 @@ import simple from '../views/simple.vue'
 import liste from '../views/liste.vue'
 import listefetch from '../views/listefetch.vue'
 import New from '../views/New.vue'
+import listsupabase from '../views/listsupabase.vue'
 
 
 
@@ -15,6 +16,8 @@ const router = createRouter({
     { path: '/liste', name: 'liste', component: liste },
     { path: '/listefetch', name: 'listefetch', component: listefetch },
     { path: '/New', name: 'New', component: New },
+    { path: '/listsupabase', name: 'listsupabase', component: listsupabase },
+
   ]
 })
 
